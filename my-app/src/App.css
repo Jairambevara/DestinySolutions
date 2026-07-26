@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+html, body {
+  scroll-snap-type: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+.app-shell {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.join-button {
+  align-self: center;
+  margin: -1.25rem 0;
+  padding: 0.9rem 1.8rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.join-button:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+  transform: translateY(4px);
+}
+
+.clock-card {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.dark-card {
+  background: #F3F5FA;
+}
+
+.light-card {
+  background:  linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);;
+  color: #E2E8F0;
+}
+
+.clock-label {
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.clock-card h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  margin: 0;
+}
+
+.clock-card img {
+  display: block;
+  width: 400px;
+  max-width: 80%;
+  height: auto;
+  border: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  object-fit: contain;
+  box-shadow: none;
+  -webkit-filter: none;
+  filter: none;
+  image-rendering: auto;
+}
+
+
+
