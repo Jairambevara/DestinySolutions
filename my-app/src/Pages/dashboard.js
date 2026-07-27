@@ -1,7 +1,9 @@
 import '../App.css';
 import './dashboard.css';
+import {useNavigate} from 'react-router-dom';
 
 function Dashboard() {
+  const navigate = useNavigate();
   return (
     <div className="dashboard-page">
       <nav className="dashboard-navbar">
@@ -94,10 +96,12 @@ function Dashboard() {
   {
     img: "/restaurant.webp",
     title: "Restaurant",
+    url:"/ResturantHome"
   },
   {
     img: "/retailstore.webp",
     title: "Retail Store",
+    url:"/ResturantHome"
   },
   {
     img: "/pharmacy.webp",
@@ -110,6 +114,7 @@ function Dashboard() {
   {
     img: "/salon.webp",
     title: "Salon",
+    url: "/salon"
   },
   {
     img: "/gym.webp",
@@ -124,7 +129,7 @@ function Dashboard() {
     title: "Meat Shop",
   }
 ].map((item) => (
-            <article className="template-card" key={item.title} style={{  border: '2px solid linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)' }}>
+            <article className="template-card" key={item.title} style={{  border: '2px solid linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)' }} onClick={() => { navigate(item.url) }}>
               <img src={item.img} alt={item.title} />
               <h3>{item.title}</h3>
             </article>
