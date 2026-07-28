@@ -1,15 +1,20 @@
 
 import './resturant-homepage.css';
-import RestaurantImg1 from '../../models/Images/ResturantImages/restauranthero.webp';
-import RestaurantImg2 from '../../models/Images/ResturantImages/restauranthero2.webp';
-import { services, highlights, styles } from '../../models/Data/resturantHomepageImages.js';
+import RestaurantImg1 from '../../models/ResturantDataBase/Images/ResturantImages/restauranthero.webp';
+import RestaurantImg2 from '../../models/ResturantDataBase/Images/ResturantImages/restauranthero2.webp';
+import UserLogo from '../../models/ResturantDataBase/Images/ResturantImages/user.jpg';
+import { services, highlights, styles } from '../../models/ResturantDataBase/Data/resturantHomepageImages.js';
+import DSLogo from '../../models/DestinySolutionsData/Images/DSLog.png'
 
 function ResturantHome() {
+
+
+
   return (
     <div className="Resturant-home-page">
       <nav className="homePage-navbar">
         <div className="navbar-brand">
-            <a href="#home"><img src="/DSlogo.png" alt="DS logo" className="navbar-logo" /></a>
+            <a href="/ResturantHome"><img src={DSLogo} alt="DS logo" className="navbar-logo" /></a>
           <span>Destiny Restaurant</span>
         </div>
 
@@ -18,7 +23,7 @@ function ResturantHome() {
           <a href="#services">Services</a>
           <a href="/ResturantMenu">Menu</a>          
           <a href="#about">Contact & About</a>
-          <span style={{width:'2rem',height:'2rem',borderRadius:'50%'}}><img src="/user.jpg" alt="Profile" style={{width:'100%',height:'100%',borderRadius:'50%'}} /></span>        </div>
+          <span style={{width:'2rem',height:'2rem',borderRadius:'50%'}}><img src={UserLogo} alt="Profile" style={{width:'100%',height:'100%',borderRadius:'50%'}} /></span>        </div>
       </nav>
 
       <div className="dashboard-card" id="home">
@@ -99,7 +104,7 @@ function ResturantHome() {
       </div>
       <div className="footer-section" id="contact" >
         <section className="footer-content">
-        <img src="/DSlogo.png" alt="DS logo" style={{ maxHeight: '150px' , background: '#ffffff',borderRadius: '50%' , border: '5px solid goldenrod' }} />
+        <img src={DSLogo} alt="DS logo" style={{ maxHeight: '150px' , background: '#ffffff',borderRadius: '50%' , border: '5px solid goldenrod' }} />
 <h1 className="footer-content-h1" style={{ marginTop: 0 }}>
   A Taste You'll Always Remember
 </h1>

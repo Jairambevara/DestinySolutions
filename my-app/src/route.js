@@ -4,6 +4,7 @@ import Dashboard from './Pages/dashboard';
 import Home from './Pages/Home';
 import ResturantHome from './Pages/Resturant/resturant-homepage';
 import ResturantMenu from './Pages/Resturant/resturant-menu';
+import ResturantCart from './Pages/Resturant/resturant-cart'
 
 function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ function AppRoutes() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/ResturantHome" element={<ResturantHome />} />
       <Route path="/ResturantMenu" element={<ResturantMenu />} />
+      <Route path="/ResturantCart" element={<ResturantCart />} />
     </Routes>
   );
 }
